@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>LIZOTORS </title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript">
+        $( document ).ready(function() { 
+            $(".subMenu").hide(); 
+            $(".subMenu").parent("li").hover(function () {
+              $(this).find(">.subMenu").not(':animated').slideDown(300);
+              $(this).toggleClass("active ");
+            });
+            $(".subMenu").parent("li").mouseleave(function () {
+              $(this).find(">.subMenu").slideUp(150);
+            });
+            $("a[href=\"#\"]").click(function () {
+              return false;
+            });
+        });
+    </script>
+</head>
+<body>
+<img src="https://img.freepik.com/free-photo/abstract-digital-grid-black-background_53876-97647.jpg?size=626&ext=jpg&ga=GA1.1.2082370165.1711324800&semt=ais" alt="">
+<div class="container">
+    <nav class="dm_multiLevel fixed">
+      <ul>
+        <li><a href="#">Research <i class="fa fa-angle-down"></i></a>
+          <ul class="subMenu">
+            <li><a href="#">Internal </a></li>
+            <li><a href="#">External &nbsp;<i class="fa fa-angle-right"></i></a>
+              <ul class="subMenu">
+                <li><a href="#">B2C &nbsp;<i class="fa fa-angle-right"></i></a>
+                    <ul class="subMenu">
+                        <li><a href="#">online </a></li>
+                        <li><a href="#">Interview </a></li>
+                        <li><a href="#">public Data </a></li>
+                        <li><a href="#">health </a></li>
+                    </ul>
+                </li>
+                <li><a href="#">B2C &nbsp;<i class="fa fa-angle-right"></i></a> 
+                  <ul class="subMenu">
+                       <li><a href="#">B2A</a></li>
+                    <li><a href="#">MODE &nbsp;<i class="fa fa-angle-right"></i></a> 
+                      <ul class="subMenu">
+                        <li><a href="#" >online &nbsp;<i class="fa fa-angle-right"></i> </a>
+                          <ul class="subMenu"> 
+                            <li><a href="#" ><img src="https://www.slideteam.net/media/catalog/product/cache/1280x720/p/r/production_process_line_flowchart_diagram_of_car_manufacturing_slide01.jpg" alt="img ">
+                            </a></li> </ul>
+                        </li>
+                        <li><a href="#" >Interview &nbsp;<i class="fa fa-angle-right"></i> </a>
+                          <ul class="subMenu"> 
+                            <li><a href="#" ><img src="https://t3.ftcdn.net/jpg/02/69/34/24/360_F_269342440_4Wxqxb5bVRtcNyUvqWW5B3pyMlRdON7I.jpg" alt="img ">
+                            </a>
+                          </ul>
+                        </li> 
+                        <li><a href="#" >Interview &nbsp;<i class="fa fa-angle-right"></i></a>
+                          <ul class="subMenu"> 
+                            <li><a href="#" >public data<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG8JL0QrHUvT3zHEwdWfvrFtNh5E6fQOT2jg&usqp=CAU" alt="img ">
+                            </a>
+                          </ul>
+                        </li> 
+                        <li>
+                          <a href="#">health </a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+          </ul>
+        </li>
+        <!-- planning  -->
+        <li><a href="#">Planning  <i class="fa fa-angle-down"></i></a>
+          <ul class="subMenu">
+            <li><a href="#">PRD</a></li>
+            <li><a href="#">Specs</a></li>
+          </ul>
+        </li>
+        <!-- designing  -->
+         <li><a href="#">Desiging<i class="fa fa-angle-down"></i></a>
+          <ul class="subMenu">
+            <li><a href="#" > Hardware &nbsp;<i class="fa fa-angle-right"></i></a>
+              <ul class="subMenu"> 
+                <li><a href="#" >hardware <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ947z-wJKOoVYFYMWbeXff8aOjggJEjwaRPw&usqp=CAU" alt="img ">
+                </a>
+              </ul>
+            </li> 
+             <li><a href="#" > Software  &nbsp;<i class="fa fa-angle-right"></i></a>
+              <ul class="subMenu"> 
+                <li><a href="#" >Software  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTymAQgtDNsIdeSH556BVDXRUvDBfDt-P0Bw&usqp=CAU" alt="img ">
+                </a>
+              </ul>
+            </li> 
+          </ul>
+        </li>
+
+       
+        <li><a href="#">Manufacturing  <i class="fa fa-angle-down"></i></a>
+          <ul class="subMenu">
+            <li><a href="#">Material</a></li>
+            <li><a href="#">Production</a></li>
+          
+          </ul>
+        </li>
+       
+        <li><a href="#">sales/Marketing   <i class="fa fa-angle-down"></i></a>
+          <ul class="subMenu">
+            <li><a href="#">online </a></li>
+            <li><a href="#">Dealearship </a></li>
+          </ul>
+        </li>
+        </ul>
+    </nav>     
+</div>
+</body>
+</html>
